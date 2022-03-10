@@ -1,0 +1,41 @@
+.banner {
+  padding: 50px 0;
+}
+
+.container-banner {
+  width: 1180px;
+  height: 823px;
+  margin: 0 auto;
+}
+
+
+.banner__name {
+  position: relative;
+  font-family: "Arial Black";
+  font-size: 150px;
+  font-weight: 900;
+  margin: 0 auto;
+  line-height: 150px;
+}
+
+
+.banner__slogan {
+  font-weight: 400;
+  font-size: 28px;
+  padding-left: 100px;
+  margin: 0;
+  line-height: 50px;
+}
+
+
+.banner__name:after {
+  position: absolute;
+  content: "";
+  width: 675px;
+  height: 762px;
+  background-image: url("../img2/game-over.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 505px;
+  top: 61px;
+}

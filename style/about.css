@@ -1,0 +1,119 @@
+.about {
+  padding: 50px 0;
+}
+
+
+.container-about {
+  width: 1180px;
+  height: 692px;
+  margin: 0 auto;
+}
+
+
+.container-left {
+  width: 600px;
+  height: 596px;
+  float: left;
+}
+
+
+.container-right {
+  width: 500px;
+  height: 596px;
+  display: inline-block;
+  float: right;
+}
+
+
+.about__title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+
+.about__text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  white-space: pre-line;
+}
+
+
+.about__text_margin1 {
+  margin-bottom: 10px;
+}
+
+
+.about__text_margin2 {
+  margin-bottom: 25px;
+}
+
+
+.about__quote {
+  width: 500px;
+  height: 216px;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+
+
+.about__quote:before {
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 50px;
+  background-image: url("../img2/quotes.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.about__quote:after {
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 50px;
+  background-image: url("../img2/quotes.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+
+}
+
+
+.boss {
+  padding-left: 221px;
+  background-image: url("../img2/boss.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left 111px bottom 0;
+}
+
+
+.boss__cite {
+  width: 280px;
+  height: 84px;
+}
+
+
+.box__text {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+
+
+
+
+

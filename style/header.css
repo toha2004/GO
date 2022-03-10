@@ -1,0 +1,29 @@
+.header {
+  padding: 50px 0;
+}
+
+
+.container-header {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+
+.navigation__title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+
+.navigation__list {
+
+}
+
+
+.navigation__items {
+
+}

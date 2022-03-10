@@ -1,0 +1,35 @@
+.rest {
+  padding: 50px 0;
+}
+
+.container-rest {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+
+.rest__title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+
+.rest__list {
+
+}
+
+.rest__item {
+
+}
+
+.rest__item_end {
+  padding-bottom: 0;
+}
+
+.rest__img {
+
+}
