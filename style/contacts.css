@@ -4,12 +4,13 @@
 
 
 .container-footer {
-  max-width: 1240px;
-  height: 350px;
+  width: 1180px;
+  height: 629px;
   padding: 0 30px;
   margin: 0 auto;
   font-size: 24px;
   line-height: 28px;
+  background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
 }
 
 
@@ -18,8 +19,8 @@
   font-weight: 700;
   font-size: 40px;
   line-height: 50px;
-  margin-bottom: 50px;
    text-transform: uppercase;
+   margin-bottom: 40px;
 }
 
 
@@ -75,6 +76,7 @@
 }
 
 
+
 .social__item {
   width: 28px;
   height: 28px;
@@ -105,3 +107,30 @@
 }
 
 
+.big-box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 146px;
+}
+
+
+.map {
+  width: 680px;
+  height: 274px;
+}
+
+
+p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}

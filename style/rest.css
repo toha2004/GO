@@ -4,32 +4,43 @@
 
 .container-rest {
   max-width: 1180px;
+  height: 640px;
   margin: 0 auto;
 }
 
 
 .rest__title {
+  width: 980px;
+  height: 103px;
   text-align: center;
   font-weight: 700;
   font-size: 40px;
   line-height: 50px;
-  margin-bottom: 50px;
+  margin: 0 auto 41px auto;
   text-transform: uppercase;
 }
 
 
 .rest__list {
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  width: 1180px;
+  height: 496px;
 }
+
 
 .rest__item {
-
+  position: relative;
+  width: 380px;
+  height: 228px;
 }
 
-.rest__item_end {
-  padding-bottom: 0;
-}
 
-.rest__img {
-
+figcaption {
+  position: absolute;
+  top: 166px;
+  right: 40px;
+  width: 300px;
 }

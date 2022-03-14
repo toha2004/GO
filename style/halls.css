@@ -20,6 +20,15 @@
 }
 
 
+.halls__list {
+  width: 1180px;
+  height: 718px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
 .halls__item {
   position: relative;
   width: 580px;
@@ -29,43 +38,38 @@
 
 
 .halls__item_vibes {
-  float: left;
   background-image: url("../img2/vibes.png");
   background-size: cover;
 }
 
 
 .halls__item_wars {
-  float: right;
   background-image: url("../img2/wars.png");
   background-size: cover;
 }
 
 
 .halls__item_west {
-  float: left;
   background-image: url("../img2/west.png");
   background-size: cover;
-  margin-bottom: 0;
 }
 
 
 .halls__item_style_end {
-  float: right;
   background-image: url("../img2/style.png");
   background-size: cover;
-  margin-bottom: 0;
 }
 
 
 .label {
   position: absolute;
-  width: inherit;
-  height: 80px;
+  width: 252px;
+  height: 160px;
   font-weight: 700;
   font-size: 70px;
   line-height: 80px;
   text-align: center;
-  top: 135px;
+  left: 164px;
+  top: 94px;
 }
 

@@ -16,9 +16,9 @@
 <header>
   <section class="header">
     <div class="container-header">
-      <img src="img/logo.png" alt="image logo" title="logo">
+      <img class="logo" src="img/logo-go.png" alt="image logo" title="logo">
       <nav class="navigation">
-        <h2 class="navigation__title">Меню</h2>
+        <!--<h2 class="navigation__title">Меню</h2>-->
         <ul class="navigation__list">
           <li class="navigation__items"><a href="#halls">Залы</a></li>
           <li class="navigation__items"><a href="#we">О нас</a></li>
@@ -27,20 +27,40 @@
           <li class="navigation__items"><a href="#contacts">Контакты</a></li>
         </ul>
       </nav>
+      <form action="https://jsonplaceholder.typicode.com/posts" method="post">
+        <button type="submit" class="button">Заказать звонок</button>
+      </form>
     </div>
   </section>
 </header>
 
 
 <main class="main">
+
+
+  <section class="banner">
+    <div class="container-banner">
+      <p class="banner__name">Game over</p>
+      <p class="banner__slogan">Новый формат игр и отдыха</p>
+      <ul class="banner__list">
+        <li class="banner__item banner__item_1"><span class="span1">4</span><br>Тематических зала</li>
+        <li class="banner__item banner__item_2"><span class="span2">new</span><br>Новейшая аппаратура</li>
+      </ul>
+      <form action="https://jsonplaceholder.typicode.com/posts" method="post">
+        <button type="submit" class="booking">Забронировать</button>
+      </form>
+      <a href="#"> <img class="down" src="img/down.png" alt="down"></a>
+    </div>
+  </section>
+
   <section class="rest">
     <div class="container-rest">
       <h2 class="rest__title">У нас есть все для классного отдыха с друзьями!</h2>
       <ul class="rest__list">
-        <li class="rest__item">
+        <li class="rest__item ">
           <figure>
             <img class="rest__img" src="img/vr.png" alt="glasses">
-            <figcaption>VR очки</figcaption>
+            <figcaption></figcaption>
           </figure>
         </li>
         <li class="rest__item">
@@ -67,21 +87,13 @@
             <figcaption>Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</figcaption>
           </figure>
         </li>
-        <li class="rest__item_end">
+        <li class="rest__item">
           <figure>
             <img class="rest__img" src="img/sony.png" alt="sony">
             <figcaption>PlayStation 5</figcaption>
           </figure>
         </li>
       </ul>
-    </div>
-  </section>
-
-
-  <section class="banner">
-    <div class="container-banner">
-      <p class="banner__name">Game over</p>
-      <p class="banner__slogan">Новый формат игр и отдыха</p>
     </div>
   </section>
 
@@ -102,88 +114,128 @@
   <section class="book">
     <div class="container-book">
       <form action="https://jsonplaceholder.typicode.com/posts" method="post">
-        <fieldset>
-          <h2 id="book" class="book__title">Забронировать зал просто</h2>
-          <div class="big-box1">
-            <h3 class="big-box1__subtitle">Выбери зал</h3>
-            <input type="button" class="big-box1__button" name="80's vibes" value="80's vibes">
-            <input type="button" class="big-box1__button" name="wars" value="star wars">
-            <input type="button" class="big-box1__button" name="west" value="wild west">
-            <input type="button" class="big-box1__button big-box1__button_end" name="style" value="neon style">
-          </div>
+        <!--<fieldset>-->
+        <h2 id="book" class="book__title">Забронировать зал просто</h2>
+        <div class="big-box1">
+          <h3 class="book__subtitle">Выбери зал</h3>
+          <ul class="big-box1__list">
+            <li class="big-box1__item"><input type="button" class="big-box1__button" name="80's vibes"
+                                              value="80's vibes"></li>
+            <li class="big-box1__item"><input type="button" class="big-box1__button" name="wars" value="star wars">
+            </li>
+            <li class="big-box1__item"><input type="button" class="big-box1__button" name="west" value="wild west">
+            </li>
+            <li class="big-box1__item"><input type="button" class="big-box1__button " name="style" value="neon style">
+            </li>
+          </ul>
+        </div>
 
-          <div class="big-box2">
-            <h3 class="big-box2__title">Собери набор развлечений</h3>
-            <div class="little-box2 little-box2_left">
-              <h3 class="big-box2__subtitle">Приставка</h3>
-              <label>
-                <input type="radio" class="little-box2__input" name="play" value="playstation">PlayStation
-              </label><br>
-              <label>
-                <input type="radio" class="little-box2__input" name="sega" value="sega mega drive">Sega Mega Drive
-              </label><br>
-              <label>
-                <input type="radio" class="little-box2__input" name="x-box" value="x-box one s">X-box One S
-              </label><br>
-              <label>
-                <input type="radio" class="little-box2__input" name="dendy" value="dendy">Dendy
-              </label>
-            </div>
-            <div class="little-box2">
-              <h3 class="big-box2__subtitle">Настольные игры</h3>
-              <label>
-                <input type="checkbox" class="little-box2__input" name="jenga" value="Jenga">Jenga
-              </label><br>
-              <label>
-                <input type="checkbox" class="little-box2__input" name="monopoly" value="Monopoly">Monopoly
-              </label><br>
-              <label>
-                <input type="checkbox" class="little-box2__input" name="play" value="Munchkin">Манчкин
-              </label><br>
-              <label>
-                <input type="checkbox" class="little-box2__input" name="alias" value="Alias">Alias
-              </label>
-            </div>
-            <div class="little-box2 little-box2_right">
-              <h3 class="big-box2__subtitle">Дополнительно</h3>
-              <label>
-                <input type="checkbox" class="little-box2__input" name="sing" value="karaoke">Караоке
-              </label><br>
-              <label>
-                <input type="checkbox" class="little-box2__input" name="vr" value="vr">VR
-              </label>
-            </div>
-          </div>
+        <div class="big-box2">
+          <h3 class="book__subtitle">Собери набор развлечений</h3>
+          <ul class="big-box2__list">
+            <li><p class="big-box2__item">Приставка</p>
+              <ul class="subtopic__list">
+                <li class="subtopic__item"><label>
+                  <input type="radio" class="little-box2__input" name="play" value="playstation">PlayStation
+                </label></li>
+                <li class="subtopic__item"><label>
+                  <input type="radio" class="little-box2__input" name="sega" value="sega mega drive">Sega Mega Drive
+                </label></li>
+                <li class="subtopic__item"><label>
+                  <input type="radio" class="little-box2__input" name="x-box" value="x-box one s">X-box One S
+                </label></li>
+                <li class="subtopic__item"><label>
+                  <input type="radio" class="little-box2__input" name="dendy" value="dendy">Dendy
+                </label></li>
+              </ul>
+            </li>
+            <li><p class="big-box2__item">Настольные игры</p>
+              <ul class="subtopic__list">
+                <li class="subtopic__item"><label>
+                  <input type="checkbox" class="little-box2__input_2" name="jenga" value="Jenga">Jenga
+                </label></li>
+                <li class="subtopic__item"><label>
+                  <input type="checkbox" class="little-box2__input_2" name="monopoly" value="Monopoly">Monopoly
+                </label></li>
+                <li class="subtopic__item"><label>
+                  <input type="checkbox" class="little-box2__input_2" name="play" value="Munchkin">Манчкин
+                </label></li>
+                <li class="subtopic__item"><label>
+                  <input type="checkbox" class="little-box2__input_2" name="alias" value="Alias">Alias
+                </label></li>
+              </ul>
+            </li>
+            <li><p class="big-box2__item">Дополнительно</p>
+              <ul class="subtopic__list">
+                <li class="subtopic__item"><label>
+                  <input type="checkbox" class="little-box2__input_2" name="sing" value="karaoke">Караоке
+                </label></li>
+                <li class="subtopic__item"><label>
+                  <input type="checkbox" class="little-box2__input_2" name="vr" value="vr">VR
+                </label></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
 
-          <div class="big-box3">
-            <h3 class="big-box3__subtitle">Выбери дату и время</h3>
-            <div class="little-box3">
-              <input type="date" class="little-box3__input_date little-box3__input_date_first" name="date" required>
-              <input type="time" class="little-box3__input_date" name="time" required>
-              <input type="number" class="little-box3__input" name="count" min="1" required
-                     placeholder="Сколько человек">
-            </div>
-            <div class="little-box3">
-              <label>Имя<br>
-                <input type="text" class="little-box3__input" name="first name" required>
-              </label><br>
-              <label>Фамилия<br>
-                <input type="text" class="little-box3__input" name="surname" required>
-              </label><br>
-            </div>
-            <div class="little-box3 little-box3_right">
-              <label>Телефон<br>
-                <input type="tel" class="little-box3__input" name="phone" required title="+7-___-___-__-__"
-                       placeholder="+7-___-___-__-__"
-                       pattern="^\+?[7-8]-?[0-9]{3}-?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$">
-              </label><br>
-              <label>E-mail<br>
-                <input type="email" class="little-box3__input" name="mail" required>
-              </label><br>
-            </div>
-          </div>
-          <button type="submit" class="book__submit">Забронировать</button>
-        </fieldset>
+
+        <div class="big-box3">
+          <h3 class="book__subtitle">Выбери дату и время</h3>
+          <ul class="big-box3__list">
+            <li class="big-box3__item">
+              <ul>
+                <li class="subtopic__item3">
+                  <ul class="big-box3__list_small">
+                    <li><br>
+                      <input type="date" class="big-box3__input_date " name="date"
+                             required>
+                    </li>
+                    <li><br>
+                      <input type="time" class="big-box3__input_date" name="time" required>
+                    </li>
+                  </ul>
+                </li>
+                <li class="subtopic__item3">
+                  <input type="number" class="big-box3__input" name="count" min="1" required
+                         placeholder="Сколько человек">
+                </li>
+              </ul>
+            </li>
+            <li class="big-box3__item">
+              <ul>
+                <li class="subtopic__item3">
+                  <label>Имя<br>
+                    <input type="text" class="big-box3__input big-box3__input_center" name="first name" required>
+                  </label>
+                </li>
+                <li class="subtopic__item3">
+                  <label>Фамилия<br>
+                    <input type="text" class="big-box3__input big-box3__input_center" name="surname" required>
+                  </label>
+                </li>
+              </ul>
+            </li>
+            <li class="big-box3__item">
+              <ul>
+                <li class="subtopic__item3">
+                  <label>Телефон<br>
+                    <input type="tel" class="big-box3__input" name="phone" required title="+7-___-___-__-__"
+                           placeholder="+7-___-___-__-__"
+                           pattern="^\+?[7-8]-?[0-9]{3}-?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$">
+                  </label>
+                </li>
+                <li class="subtopic__item3">
+                  <label>E-mail<br>
+                    <input type="email" class="big-box3__input" name="mail" required>
+                  </label>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <button type="submit" class="book__submit">Забронировать</button>
+        <!--</fieldset>-->
       </form>
     </div>
   </section>
@@ -276,18 +328,28 @@
   <section class="footer">
     <div class="container-footer">
       <h2 id="contacts" class="footer__title">Контакты</h2>
-      <ul class="contacts__list">
-        <li class="contacts__item contacts__item_location">г.Москва ул.Аквамарина, 16</li>
-        <li class="contacts__item contacts__item_phone"><a href="tel:89999999999">8(950)930-28-93</a></li>
-        <li class="contacts__item contacts__item_mail "><a href="mailto:GameOver@gmail.com">GameOver@gmail.com</a></li>
-      </ul>
-      <ul class="social">
-        <li class="social__item social__item_Ins"><a href="#" target="_blank"></a></li>
-        <li class="social__item social__item_Vk"><a href="#" target="_blank"></a></li>
-        <li class="social__item social__item_Fb"><a href="#" target="_blank"></a></li>
-        <li class="social__item social__item_Tg"><a href="#" target="_blank"></a></li>
-      </ul>
+      <div class="big-box">
+        <div class="box">
+          <ul class="contacts__list">
+            <li class="contacts__item contacts__item_location">г.Москва ул.Аквамарина, 16</li>
+            <li class="contacts__item contacts__item_phone"><a href="tel:89999999999">8(950)930-28-93</a></li>
+            <li class="contacts__item contacts__item_mail "><a href="mailto:GameOver@gmail.com">GameOver@gmail.com</a>
+            </li>
+          </ul>
+          <ul class="social">
+            <li class="social__item social__item_Ins"><a href="#" target="_blank"></a></li>
+            <li class="social__item social__item_Vk"><a href="#" target="_blank"></a></li>
+            <li class="social__item social__item_Fb"><a href="#" target="_blank"></a></li>
+            <li class="social__item social__item_Tg"><a href="#" target="_blank"></a></li>
+          </ul>
+        </div>
+        <img class="map" src="img/map.png" alt="карта">
+      </div>
+      <p class="left">© Game Over, 2022</p>
+      <p class="right">Design by Anastasia Ilina<br>
+      ilina9825@gmail.com</p>
     </div>
+
   </section>
 </footer>
 </body>
