@@ -45,12 +45,18 @@ fieldset {
 
 .big-box1__list {
   display: flex;
-  align-content: space-between;
   justify-content: space-between;
+  align-items: center;
 }
 
 
 .big-box1__radio {
+  appearance: none;
+  -web-kit-appearance: none;
+}
+
+
+.big-box1__button {
   width: 250px;
   height: 55px;
   font-weight: 700;
@@ -61,6 +67,7 @@ fieldset {
   border-radius: 8px;
   text-align: center;
   text-transform: uppercase;
+  padding: 7px 15px 8px 15px;
 }
 
 
