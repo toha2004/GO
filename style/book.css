@@ -50,7 +50,7 @@ fieldset {
 }
 
 
-.big-box1__button {
+.big-box1__radio {
   width: 250px;
   height: 55px;
   font-weight: 700;
@@ -64,7 +64,26 @@ fieldset {
 }
 
 
+.big-box1__radio:hover {
+  background: #EADEED;
+  border: 3px solid #640AA3;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
 
+
+.big-box1__radio:focus {
+  background: #FFFFFF;
+  border: 3px solid #640AA3;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+
+.big-box1__radio:active {
+  background: #EADEED;
+  border-radius: 8px;
+}
 
 
 .big-box2 {
@@ -90,28 +109,50 @@ fieldset {
 }
 
 
-.subtopic__item {
+.small-box2 {
+  width: 280px;
+  height: 219px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   font-weight: 400;
   font-size: 22px;
   line-height: 25px;
   color: #FFFFFF;
-  margin-bottom: 20px;
 }
 
 
-.little-box2__input {
+.small-box2_end {
+  width: 280px;
+  height: 125px;
+}
+
+
+.big-box2__input {
   width: 27px;
   height: 27px;
   margin-right: 12px;
 }
 
 
-.little-box2__input_2 {
+.big-box2__input_2 {
   width: 25px;
   height: 25px;
   margin-right: 12px;
 }
 
+
+.big-box2__input:focus {
+  background: #FFFFFF;
+}
+
+
+.big-box2__input_2:focus {
+  width: 33px;
+  height: 33px;
+  border: 1px solid #CD06FF;
+  box-sizing: border-box;
+}
 
 
 
@@ -128,17 +169,25 @@ fieldset {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+
 }
 
-li {
-  margin-bottom: 14px;
+
+.small-box3 {
+  height: 162px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.big-box3__list_small {
+
+.small-box__subtopic {
+  width: 300px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 36px;
- }
+  padding-top: 22px;
+
+}
 
 
 .big-box3__input_date {
@@ -151,9 +200,23 @@ li {
 }
 
 
+.big-box3__input_date:focus {
+  background: #FFFFFF;
+  border: 2px solid #CD06FF;
+  box-sizing: border-box;
+}
+
+
 .big-box3__input {
   width: 300px;
   height: 52px;
+}
+
+
+.big-box3__input:focus {
+  background: #FFFFFF;
+  border: 2px solid #CD06FF;
+  box-sizing: border-box;
 }
 
 
@@ -171,7 +234,6 @@ label {
 }
 
 
-
 .book__submit {
   width: 300px;
   height: 60px;
@@ -183,6 +245,28 @@ label {
   color: #6C0287;
   margin-right: 100px;
   background: #FFFFFF;
+  border-radius: 10px;
+}
+
+
+.book__submit:hover {
+  background: #EADEED;
+  border: 3px solid #6C0287;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+
+.book__submit:focus {
+  background: #FFFFFF;
+  border: 3px solid #6C0287;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+
+.book__submit:active {
+  background: #EADEED;
   border-radius: 10px;
 }
 

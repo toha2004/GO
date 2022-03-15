@@ -95,7 +95,8 @@ color: #CD06FF;
 .booking {
   width: 374px;
   height: 80px;
-  background: #6C0287;
+  background-color: #6C0287;
+  border: 1px solid #6C0287;
   border-radius: 10px;
   font-style: normal;
   font-weight: 700;
@@ -106,10 +107,53 @@ color: #CD06FF;
 }
 
 
+.booking:hover {
+  background: #840AA3;
+  border-radius: 10px;
+}
+
+
+.booking:focus {
+  background: #840AA3;
+  border-radius: 10px;
+}
+
+
+.booking:active {
+  background: #640AA3;
+  border-radius: 10px;
+}
+
+
 .down {
   position: absolute;
   width: 97px;
   height: 97px;
+  background-image: url("../img/down.png");
   top: 636px;
   left: 539px;
+}
+
+
+.down:hover {
+  width: 99px;
+  height: 99px;
+  background-image: url("../img/down-hover.png");
+  border: 1px solid #FFFFFF;
+}
+
+
+.down:focus {
+  width: 99px;
+  height: 99px;
+  border: 1px solid #CD06FF;
+}
+
+
+.down:active {
+  width: 99px;
+  height: 99px;
+  background-image: url("../img/down-active.png");
+  border: 1px solid #CD06FF;
+  box-sizing: border-box;
 }

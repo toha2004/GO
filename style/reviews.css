@@ -20,23 +20,25 @@
 }
 
 
-.reviews__item {
-  margin-bottom: 50px;
+.reviews__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
 }
 
 
-.reviews__item_end {
-  margin-bottom: 0;
+.box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 11px;
 }
 
 
 .container-img {
   width: 280px;
   height: 280px;
-  float: left;
-  margin-right: 20px;
-  margin-bottom: 11px;
-
 }
 
 
@@ -56,7 +58,8 @@
 
 
 .reviews__text {
-  padding-top: 52px;
+  width: 680px;
+  height: 88px;
 }
 
 

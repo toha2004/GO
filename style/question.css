@@ -15,7 +15,7 @@
   font-weight: 700;
   font-size: 40px;
   line-height: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   text-transform: uppercase;
 }
 
@@ -38,7 +38,8 @@
 }
 
 
-.question__item_end{
+
+.question__item:last-child{
   margin-bottom: 0;
 }
 
@@ -73,4 +74,16 @@
   background-repeat: no-repeat;
   float: right;
   transform: translateY(-8%);
+}
+
+
+.question__item:hover {
+
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+}
+
+.question__item:active {
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
 }

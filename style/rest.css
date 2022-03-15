@@ -35,10 +35,44 @@
   position: relative;
   width: 380px;
   height: 228px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.rest__item_1 {
+  background-image: url("../img/vr1.png");
+}
+
+.rest__item_2 {
+  background-image: url("../img/audio.png");
+}
+
+.rest__item_3 {
+  background-image: url("../img/micro.png");
+}
+
+.rest__item_4 {
+  background-image: url("../img/game.png");
+}
+
+.rest__item_5 {
+  background-image: url("../img/netflix.png");
+}
+
+.rest__item_6 {
+  background-image: url("../img/sony.png");
+}
+
+figcaption {
+  position: absolute;
+  top: 166px;
+  right: 40px;
+  width: 300px;
 }
 
 
-figcaption {
+.figcaption {
   position: absolute;
   top: 166px;
   right: 40px;

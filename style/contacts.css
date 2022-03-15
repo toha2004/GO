@@ -25,7 +25,7 @@
 
 
 .contacts__list {
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 
@@ -36,12 +36,12 @@
 
 
 .contacts__item_location {
-  margin-bottom: 36px;
+  margin-bottom: 39px;
 }
 
 
 .contacts__item_phone {
-  margin-bottom: 11px;
+  margin-bottom: 14px;
 }
 
 
@@ -77,16 +77,36 @@
 
 
 
+.social {
+  width: 280px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .social__item {
-  width: 28px;
-  height: 28px;
+  width: 48px;
+  height: 48px;
   float: left;
-  margin-right: 56px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: left;
   color: #FFFFFF;
 
+}
+
+
+
+.social__item:hover{
+  background: #EADEED;
+}
+
+.social__item:focus{
+  background: #EADEED;
+}
+
+.social__item:active{
+  background: #CD06FF;
 }
 
 .social__item_Ins {
@@ -120,7 +140,7 @@
 }
 
 
-p {
+.footer__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;

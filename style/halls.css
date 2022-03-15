@@ -30,10 +30,12 @@
 }
 
 .halls__item {
-  position: relative;
   width: 580px;
   height: 349px;
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -52,12 +54,14 @@
 .halls__item_west {
   background-image: url("../img2/west.png");
   background-size: cover;
+  margin-bottom: 0;
 }
 
 
-.halls__item_style_end {
+.halls__item_style {
   background-image: url("../img2/style.png");
   background-size: cover;
+  margin-bottom: 0;
 }
 
 
@@ -69,7 +73,5 @@
   font-size: 70px;
   line-height: 80px;
   text-align: center;
-  left: 164px;
-  top: 94px;
-}
+ }
 
