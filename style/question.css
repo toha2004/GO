@@ -60,6 +60,8 @@
   background-repeat: no-repeat;
   right: 25px;
   top: 20px;
+  transition-property: transform, background-image;
+  transition-duration: .3s;
 }
 
 
@@ -74,28 +76,34 @@
   background-repeat: no-repeat;
   float: right;
   transform: translateY(-8%);
+  transition-property: transform, background-image;
+  transition-duration: .3s;
 }
 
 
 .question__item:hover:after {
   background-image: url("../img/open-hover1.svg");
   box-sizing: border-box;
+  transform: scale(1.1);
 }
 
 
 .question__item:active:after {
   background-image: url("../img/close1.svg");
   box-sizing: border-box;
+  transform: scale(1.1);
 }
 
 
 .question__item:hover:nth-child(2n):after {
   background-image: url("../img/open-hover2.svg");
   box-sizing: border-box;
+  transform: scale(1.1);
 }
 
 
 .question__item:active:nth-child(2n):after {
   background-image: url("../img/close2.svg");
   box-sizing: border-box;
+  transform: scale(1.1);
 }

@@ -92,12 +92,14 @@
   background-repeat: no-repeat;
   background-position: left;
   color: #FFFFFF;
-
+  transition-property: transform, background-image;
+  transition-duration: .3s;
 }
 
 
 .social__item_Ins {
   background-image: url("../img2/Vector.svg");
+
 }
 
 
@@ -119,16 +121,37 @@
 
 .social__item_Ins:hover{
   background-image: url("../img/hover-social.png");
+  transform: scale(1.1);
 }
 
 
 .social__item_Ins:focus{
  background-image: url("../img/social-focus.png");
+  transform: scale(1.1);
 }
 
 
 .social__item_Ins:active{
   background-image: url("../img/social-active.png");
+  transform: scale(1.1);
+}
+
+
+.social__item_Vk:hover, .social__item_Vk:focus, .social__item_Vk:active {
+  background-image: url("../img2/Vector2.svg");
+  transform: scale(1.1);
+}
+
+
+.social__item_Tg:hover, .social__item_Tg:focus, .social__item_Tg:active {
+  background-image: url("../img2/Vector4.svg");
+  transform: scale(1.1);
+}
+
+
+.social__item_Fb:hover, .social__item_Fb:focus, .social__item_Fb:active {
+  background-image: url("../img2/Vector3.svg");
+  transform: scale(1.1);
 }
 
 
