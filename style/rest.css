@@ -38,6 +38,8 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 28px;
+  transition-property: transform;
+  transition-duration: .3s;
 }
 
 .rest__item_1 {
@@ -77,4 +79,9 @@ figcaption {
   top: 166px;
   right: 40px;
   width: 300px;
+}
+
+
+.rest__item:hover {
+  transform: scale(1.1);
 }
