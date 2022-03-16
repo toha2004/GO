@@ -46,7 +46,6 @@
 .banner__list {
   width: 359px;
   display: flex;
-
   align-items: end;
   text-align: center;
   font-weight: 400;
@@ -104,17 +103,21 @@ color: #CD06FF;
   line-height: 30px;
   text-transform: uppercase;
   color: #FFFFFF;
+  transition-property: transform, background-color;
+  transition-duration: .3s;
 }
 
 
 .booking:hover, .booking:focus {
-  background: #840AA3;
+  transform: scale(1.1);
+  background-color: #840AA3;
   border-radius: 10px;
 }
 
 
 .booking:active {
-  background: #640AA3;
+  transform: scale(1.1);
+  background-color: #640AA3;
   border-radius: 10px;
   border: 1px solid #640AA3;
 }
@@ -127,26 +130,25 @@ color: #CD06FF;
   background-image: url("../img/down.png");
   top: 636px;
   left: 539px;
+  transition-property: transform,  background-image;
+  transition-duration: .3s;
 }
 
 
 .down:hover {
-  width: 99px;
-  height: 99px;
+  transform: scale(1.1);
   background-image: url("../img/down-hover.png");
 }
 
 
 .down:focus {
-  width: 99px;
-  height: 99px;
+  transform: scale(1.1);
   background-image: url("../img/down-focus.png");
 }
 
 
 .down:active {
-  width: 99px;
-  height: 99px;
+  transform: scale(1.1);
   background-image: url("../img/down-active.png");
   box-sizing: border-box;
 }
