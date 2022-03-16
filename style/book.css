@@ -71,7 +71,7 @@ fieldset {
 }
 
 
-.big-box1__radio:hover {
+.big-box1__button:hover {
   background: #EADEED;
   border: 3px solid #640AA3;
   box-sizing: border-box;
@@ -79,31 +79,34 @@ fieldset {
 }
 
 
-.big-box1__radio:focus {
-  background: #FFFFFF;
+.big-box1__button:focus {
+  background-color: #FFFFFF;
   border: 3px solid #640AA3;
   box-sizing: border-box;
   border-radius: 8px;
 }
 
 
-.big-box1__radio:active {
-  background: #EADEED;
+.big-box1__button:active {
+  background-color: #EADEED;
+  border: 3px solid  #EADEED;
   border-radius: 8px;
 }
+
 
 
 .big-box2 {
   width: 1180px;
   height: 287px;
-  margin-bottom: 67px;
+  padding-left: 100px;
+  margin: 0 auto 67px auto;
 }
 
 
 .big-box2__list {
   height: 219px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 
@@ -127,10 +130,13 @@ fieldset {
   line-height: 25px;
   color: #FFFFFF;
 }
+.small-box2_left {
+  width: 300px;
+  height: 219px;
+}
 
-
-.small-box2_end {
-  width: 280px;
+.small-box2_right {
+  width: 300px;
   height: 125px;
 }
 
@@ -141,11 +147,29 @@ fieldset {
   margin-right: 12px;
 }
 
+.big-box2__input:focus {
+  background: #FFFFFF;
+  border: 1px solid #CD06FF;
+}
+
 
 .big-box2__input_2 {
   width: 25px;
   height: 25px;
   margin-right: 12px;
+}
+
+
+.big-box2__input_2:focus {
+  border: 1px solid #CD06FF;
+}
+
+
+.big-box2__label {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 25px;
+  color: #FFFFFF;
 }
 
 
@@ -208,9 +232,7 @@ fieldset {
 
 
 .big-box3__input_date:focus {
-  background: #FFFFFF;
   border: 2px solid #CD06FF;
-  box-sizing: border-box;
 }
 
 
@@ -221,9 +243,7 @@ fieldset {
 
 
 .big-box3__input:focus {
-  background: #FFFFFF;
   border: 2px solid #CD06FF;
-  box-sizing: border-box;
 }
 
 
@@ -233,7 +253,7 @@ fieldset {
 }
 
 
-label {
+.small-box3__label {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -257,7 +277,7 @@ label {
 
 
 .book__submit:hover {
-  background: #EADEED;
+  background-color: #EADEED;
   border: 3px solid #6C0287;
   box-sizing: border-box;
   border-radius: 10px;
@@ -265,7 +285,7 @@ label {
 
 
 .book__submit:focus {
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   border: 3px solid #6C0287;
   box-sizing: border-box;
   border-radius: 10px;
@@ -273,7 +293,8 @@ label {
 
 
 .book__submit:active {
-  background: #EADEED;
+  background-color: #EADEED;
+  border: 3px solid #EADEED;
   border-radius: 10px;
 }
 

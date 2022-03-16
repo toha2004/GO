@@ -21,10 +21,11 @@
 
 
 .reviews__list {
+  width: 980px;
+  height: 1057px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-content: space-between;
 }
 
 

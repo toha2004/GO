@@ -107,13 +107,7 @@ color: #CD06FF;
 }
 
 
-.booking:hover {
-  background: #840AA3;
-  border-radius: 10px;
-}
-
-
-.booking:focus {
+.booking:hover, .booking:focus {
   background: #840AA3;
   border-radius: 10px;
 }
@@ -122,6 +116,7 @@ color: #CD06FF;
 .booking:active {
   background: #640AA3;
   border-radius: 10px;
+  border: 1px solid #640AA3;
 }
 
 
@@ -139,14 +134,13 @@ color: #CD06FF;
   width: 99px;
   height: 99px;
   background-image: url("../img/down-hover.png");
-  border: 1px solid #FFFFFF;
 }
 
 
 .down:focus {
   width: 99px;
   height: 99px;
-  border: 1px solid #CD06FF;
+  background-image: url("../img/down-focus.png");
 }
 
 
@@ -154,6 +148,5 @@ color: #CD06FF;
   width: 99px;
   height: 99px;
   background-image: url("../img/down-active.png");
-  border: 1px solid #CD06FF;
   box-sizing: border-box;
 }

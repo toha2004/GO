@@ -76,13 +76,13 @@
 }
 
 
-
 .social {
   width: 280px;
   height: 50px;
   display: flex;
   justify-content: space-between;
 }
+
 
 .social__item {
   width: 48px;
@@ -96,34 +96,39 @@
 }
 
 
-
-.social__item:hover{
-  background: #EADEED;
-}
-
-.social__item:focus{
-  background: #EADEED;
-}
-
-.social__item:active{
-  background: #CD06FF;
-}
-
 .social__item_Ins {
   background-image: url("../img2/Vector.svg");
 }
+
 
 .social__item_Vk {
   background-image: url("../img2/Vector2.svg");
 }
 
+
 .social__item_Fb {
   background-image: url("../img2/Vector3.svg");
 }
 
+
 .social__item_Tg {
   background-image: url("../img2/Vector4.svg");
   margin-right: 0;
+}
+
+
+.social__item_Ins:hover{
+  background-image: url("../img/hover-social.png");
+}
+
+
+.social__item_Ins:focus{
+ background-image: url("../img/social-focus.png");
+}
+
+
+.social__item_Ins:active{
+  background-image: url("../img/social-active.png");
 }
 
 
@@ -147,9 +152,11 @@
   color: #FFFFFF;
 }
 
+
 .left {
   float: left;
 }
+
 
 .right {
   float: right;
