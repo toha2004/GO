@@ -39,6 +39,11 @@
 
 }
 
+.navigation__items:hover {
+  color: #6C0287;
+  transition-duration: .3s;
+}
+
 
 .button {
   width: 280px;

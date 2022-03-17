@@ -82,6 +82,6 @@ figcaption {
 }
 
 
-.rest__item:hover {
+ .rest__item:hover {
   transform: scale(1.1);
 }

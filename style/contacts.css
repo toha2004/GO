@@ -44,6 +44,10 @@
   margin-bottom: 14px;
 }
 
+.contacts__item_phone:hover {
+  color: #6C0287;
+  transition-duration: .3s;
+}
 
 .contacts__item_location:before {
   position: absolute;
@@ -73,6 +77,12 @@
   height: 32px;
   background-image: url("../img2/mail.svg");
   left: 0;
+}
+
+
+.contacts__item_mail:hover {
+  color: #6C0287;
+  transition-duration: .3s;
 }
 
 
@@ -183,4 +193,10 @@
 
 .right {
   float: right;
+}
+
+
+.right:hover {
+  color: #6C0287;
+  transition-duration: .3s;
 }
