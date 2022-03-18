@@ -26,7 +26,7 @@
   margin-right: 97px;
   justify-content: space-between;
   gap: 40px;
-
+  white-space: nowrap;
 }
 
 

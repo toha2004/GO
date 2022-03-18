@@ -51,8 +51,9 @@ fieldset {
 
 
 .big-box1__radio {
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
-  -web-kit-appearance: none;
 }
 
 
@@ -146,6 +147,8 @@ fieldset {
 }
 
 
+
+
 .big-box2__input {
   width: 27px;
   height: 27px;
@@ -181,6 +184,8 @@ fieldset {
   font-size: 22px;
   line-height: 25px;
   color: var(--main-color5);
+  display: flex;
+  align-items: center;
 }
 
 
