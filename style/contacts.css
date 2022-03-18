@@ -10,7 +10,7 @@
   margin: 0 auto;
   font-size: 24px;
   line-height: 28px;
-  background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
+  background: linear-gradient(180deg, var(--main-color8) 0%, var(--main-color9) 100%);
 }
 
 
@@ -45,7 +45,7 @@
 }
 
 .contacts__item_phone:hover {
-  color: #6C0287;
+  color: var(--main-color2);
   transition-duration: .3s;
 }
 
@@ -81,7 +81,7 @@
 
 
 .contacts__item_mail:hover {
-  color: #6C0287;
+  color: var(--main-color2);
   transition-duration: .3s;
 }
 
@@ -101,7 +101,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: left;
-  color: #FFFFFF;
+  color: var(--main-color5);
   transition-property: transform, background-image;
   transition-duration: .3s;
 }
@@ -182,7 +182,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  color: #FFFFFF;
+  color: var(--main-color5);
 }
 
 
@@ -197,6 +197,6 @@
 
 
 .right:hover {
-  color: #6C0287;
+  color: var(--main-color2);
   transition-duration: .3s;
 }

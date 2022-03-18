@@ -9,7 +9,7 @@
   height: 1114px;
   margin: 0 auto;
   padding: 80px 0;
-  background-color: #440F51;
+  background-color: var(--main-color7);
 }
 
 
@@ -62,8 +62,8 @@ fieldset {
   font-weight: 700;
   font-size: 30px;
   line-height: 40px;
-  color: #000000;
-  background: #FFFFFF;
+  color: var(--main-color10);
+  background: var(--main-color5);
   border-radius: 8px;
   text-align: center;
   text-transform: uppercase;
@@ -75,8 +75,8 @@ fieldset {
 
 .big-box1__button:hover {
   transform: scale(1.1);
-  background: #EADEED;
-  border: 3px solid #640AA3;
+  background: var(--main-color11);
+  border: 3px solid var(--main-color3);
   box-sizing: border-box;
   border-radius: 8px;
 }
@@ -84,8 +84,8 @@ fieldset {
 
 .big-box1__button:focus {
   transform: scale(1.1);
-  background-color: #FFFFFF;
-  border: 3px solid #640AA3;
+  background-color: var(--main-color5);
+  border: 3px solid var(--main-color3);
   box-sizing: border-box;
   border-radius: 8px;
 }
@@ -93,8 +93,8 @@ fieldset {
 
 .big-box1__button:active {
   transform: scale(1.1);
-  background-color: #EADEED;
-  border: 3px solid  #EADEED;
+  background-color: var( --main-color11);
+  border: 3px solid  var( --main-color11);
   border-radius: 8px;
 }
 
@@ -133,7 +133,7 @@ fieldset {
   font-weight: 400;
   font-size: 22px;
   line-height: 25px;
-  color: #FFFFFF;
+  color: var(--main-color5);
 }
 .small-box2_left {
   width: 300px;
@@ -156,8 +156,8 @@ fieldset {
 
 .big-box2__input:focus {
   transform: scale(1.1);
-  background: #FFFFFF;
-  border: 1px solid #CD06FF;
+  background: var(--main-color5);
+  border: 1px solid var( --main-color2);
 }
 
 
@@ -172,7 +172,7 @@ fieldset {
 
 .big-box2__input_2:focus {
   transform: scale(1.1);
-  border: 1px solid #CD06FF;
+  border: 1px solid var( --main-color2);
 }
 
 
@@ -180,13 +180,13 @@ fieldset {
   font-weight: 400;
   font-size: 22px;
   line-height: 25px;
-  color: #FFFFFF;
+  color: var(--main-color5);
 }
 
 
 .big-box2__input:focus {
   transform: scale(1.1);
-  background: #FFFFFF;
+  background: var(--main-color5);
 }
 
 
@@ -194,7 +194,7 @@ fieldset {
   transform: scale(1.1);
   width: 33px;
   height: 33px;
-  border: 1px solid #CD06FF;
+  border: 1px solid var(--main-color2);
   box-sizing: border-box;
 }
 
@@ -248,7 +248,7 @@ fieldset {
 
 .big-box3__input_date:focus {
   transform: scale(1.1);
-  border: 2px solid #CD06FF;
+  border: 2px solid var(--main-color2);
 }
 
 
@@ -262,7 +262,7 @@ fieldset {
 
 .big-box3__input:focus {
   transform: scale(1.1);
-  border: 2px solid #CD06FF;
+  border: 2px solid var(--main-color2);
 }
 
 
@@ -276,7 +276,7 @@ fieldset {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
-  color: #FFFFFF;
+  color: var(--main-color5);
 }
 
 
@@ -288,9 +288,9 @@ fieldset {
   font-size: 22px;
   line-height: 28px;
   text-transform: uppercase;
-  color: #6C0287;
+  color: var(--main-color);
   margin-right: 100px;
-  background: #FFFFFF;
+  background: var(--main-color5);
   border-radius: 10px;
   transition-property: transform, background-color;
   transition-duration: .3s;
@@ -300,7 +300,7 @@ fieldset {
 .book__submit:hover {
   transform: scale(1.1);
   background-color: #EADEED;
-  border: 3px solid #6C0287;
+  border: 3px solid var(--main-color);
   box-sizing: border-box;
   border-radius: 10px;
 }
@@ -308,8 +308,8 @@ fieldset {
 
 .book__submit:focus {
   transform: scale(1.1);
-  background-color: #FFFFFF;
-  border: 3px solid #6C0287;
+  background-color: var(--main-color5);
+  border: 3px solid var(--main-color);
   box-sizing: border-box;
   border-radius: 10px;
 }
@@ -317,8 +317,8 @@ fieldset {
 
 .book__submit:active {
   transform: scale(1.1);
-  background-color: #EADEED;
-  border: 3px solid #EADEED;
+  background-color: var(--main-color11);
+  border: 3px solid var(--main-color11);
   border-radius: 10px;
 }
 
