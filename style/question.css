@@ -59,11 +59,11 @@
   background-repeat: no-repeat;
   right: 25px;
   top: 20px;
-  transition: background-image 3s ease-in;
-  -webkit-transition: background-image 3s linear;
-  -moz-transition: background-image 3s linear;
-  -o-transition: background-image 3s linear;
-  transition-delay: 1s;
+  transition: background-image .3s ease-in;
+  -webkit-transition: background-image .3s linear;
+  -moz-transition: background-image .3s linear;
+  -o-transition: background-image .3s linear;
+
 }
 
 
@@ -78,34 +78,35 @@
   background-repeat: no-repeat;
   float: right;
   transform: translateY(-8%);
-  transition: background-image 3s ease-in;
-  -webkit-transition: background-image 3s linear;
-  -moz-transition: background-image 3s linear;
-  -o-transition: background-image 3s linear;
-  transition-delay: 1s;
+  transition: background-image .3s ease-in;
+  -webkit-transition: background-image .3s linear;
+  -moz-transition: background-image .3s linear;
+  -o-transition: background-image .3s linear;
+
 }
 
 
 .question__item:hover:after {
-  background-image: url("../img/open-hover1.svg");
-
+  background: url("../img/open-hover1.svg") no-repeat;
+  background-size: contain;
 }
 
 
 .question__item:active:after {
-  background-image: url("../img/close1.svg");
-
+  background: url("../img/close1.svg") no-repeat;
+  background-size: contain;
 
 }
 
 
 .question__item:hover:nth-child(2n):after {
-  background-image: url("../img/open-hover2.svg");
+  background: url("../img/open-hover2.svg") no-repeat;
+  background-size: contain;
 
 }
 
 
 .question__item:active:nth-child(2n):after {
-  background-image: url("../img/close2.svg");
-
+  background: url("../img/close2.svg") no-repeat;
+  background-size: contain;
 }

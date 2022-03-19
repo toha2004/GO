@@ -58,13 +58,13 @@
   border:  3px solid var(--main-color2);
   border-radius: 10px;
   transition-property: transform, background-color;
-  transition-duration: .3s;
+  transition-duration: 1.3s;
 
 }
 
 
 .button:hover, .button:focus {
-  transform: scale(1.1);
+  transform: scale(.1) rotate(360deg);
   background-color: var(--main-color);
   border: 3px solid #6C0287;
   border-radius: 10px;
