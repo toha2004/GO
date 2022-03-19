@@ -60,6 +60,10 @@
   right: 25px;
   top: 20px;
   transition: background-image 3s ease-in;
+  -webkit-transition: background-image 3s linear;
+  -moz-transition: background-image 3s linear;
+  -o-transition: background-image 3s linear;
+  transition-delay: 1s;
 }
 
 
@@ -75,30 +79,33 @@
   float: right;
   transform: translateY(-8%);
   transition: background-image 3s ease-in;
+  -webkit-transition: background-image 3s linear;
+  -moz-transition: background-image 3s linear;
+  -o-transition: background-image 3s linear;
+  transition-delay: 1s;
 }
 
 
 .question__item:hover:after {
   background-image: url("../img/open-hover1.svg");
-  box-sizing: border-box;
-  transition: background-image 3s ease-in;
+
 }
 
 
 .question__item:active:after {
   background-image: url("../img/close1.svg");
-  box-sizing: border-box;
+
 
 }
 
 
 .question__item:hover:nth-child(2n):after {
   background-image: url("../img/open-hover2.svg");
-  box-sizing: border-box;
+
 }
 
 
 .question__item:active:nth-child(2n):after {
   background-image: url("../img/close2.svg");
-  box-sizing: border-box;
+
 }
