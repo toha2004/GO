@@ -4,7 +4,7 @@
 
 .container-rest {
   max-width: 1180px;
-  height: 640px;
+  height: 708px;
   margin: 0 auto;
 }
 
@@ -16,7 +16,7 @@
   font-weight: 700;
   font-size: 40px;
   line-height: 50px;
-  margin: 0 auto 41px auto;
+  margin: 0 auto 40px auto;
   text-transform: uppercase;
 }
 
@@ -27,7 +27,7 @@
   justify-content: space-between;
   align-content: space-between;
   width: 1180px;
-  height: 496px;
+
 }
 
 
@@ -48,6 +48,7 @@
 
 .rest__item_2 {
   background-image: url("../img/audio.png");
+  margin-top: 70px;
 }
 
 .rest__item_3 {
@@ -60,6 +61,7 @@
 
 .rest__item_5 {
   background-image: url("../img/netflix.png");
+  margin-top: 70px;
 }
 
 .rest__item_6 {
