@@ -143,7 +143,7 @@
 
 .social__item_Ins:active{
   background-image: url("../img/social-active.png");
-  transform: scale(1.1);
+  transform: scale(0.9);
 }
 
 
