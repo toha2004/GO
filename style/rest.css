@@ -22,10 +22,11 @@
 
 
 .rest__list {
+  height: 565px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  row-gap: 40px;
+  align-items: baseline;
   width: 1180px;
 }
 
@@ -47,6 +48,7 @@
 
 .rest__item_2 {
   background-image: url("../img/audio.png");
+  align-self: self-end;
 }
 
 .rest__item_3 {
