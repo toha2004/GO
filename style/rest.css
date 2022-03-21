@@ -25,9 +25,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-content: space-between;
+  row-gap: 40px;
   width: 1180px;
-
 }
 
 
@@ -48,7 +47,6 @@
 
 .rest__item_2 {
   background-image: url("../img/audio.png");
-  margin-top: 70px;
 }
 
 .rest__item_3 {
@@ -61,7 +59,7 @@
 
 .rest__item_5 {
   background-image: url("../img/netflix.png");
-  margin-top: 70px;
+  align-self: self-end;
 }
 
 .rest__item_6 {
@@ -84,6 +82,6 @@ figcaption {
 }
 
 
- .rest__item:hover {
+.rest__item:hover {
   transform: scale(1.1);
 }

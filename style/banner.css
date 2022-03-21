@@ -109,7 +109,7 @@ color: var(--main-color2);
 
 
 .booking:hover, .booking:focus {
-  transform: scale(1.1);
+
   background-color: var(--main-color4);
   border-radius: 10px;
 }

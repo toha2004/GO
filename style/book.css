@@ -75,7 +75,7 @@ fieldset {
 
 
 .big-box1__button:hover {
-  transform: scale(1.1);
+
   background: var(--main-color11);
   border: 3px solid var(--main-color3);
   box-sizing: border-box;
@@ -84,7 +84,7 @@ fieldset {
 
 
 .big-box1__button:focus {
-  transform: scale(1.1);
+
   background-color: var(--main-color5);
   border: 3px solid var(--main-color3);
   box-sizing: border-box;
@@ -303,7 +303,7 @@ fieldset {
 
 
 .book__submit:hover {
-  transform: scale(1.1);
+
   background-color: #EADEED;
   border: 3px solid var(--main-color);
   box-sizing: border-box;
@@ -312,7 +312,7 @@ fieldset {
 
 
 .book__submit:focus {
-  transform: scale(1.1);
+
   background-color: var(--main-color5);
   border: 3px solid var(--main-color);
   box-sizing: border-box;
