@@ -78,13 +78,12 @@ fieldset {
 
   background: var(--main-color11);
   border: 3px solid var(--main-color3);
-  box-sizing: border-box;
+  background-size: inherit;
   border-radius: 8px;
 }
 
 
 .big-box1__button:focus {
-
   background-color: var(--main-color5);
   border: 3px solid var(--main-color3);
   box-sizing: border-box;
@@ -299,17 +298,47 @@ fieldset {
   border-radius: 10px;
   transition-property: transform, background-color;
   transition-duration: .3s;
+
 }
 
 
 .book__submit:hover {
-
+  -webkit-animation: swing 0.6s ease;
+  animation: btn 0.6s ease;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
   background-color: #EADEED;
   border: 3px solid var(--main-color);
   box-sizing: border-box;
   border-radius: 10px;
 }
 
+@keyframes btn {
+  15% {
+    -webkit-transform: translateX(9px);
+    transform: translateX(9px);
+  }
+  30% {
+    -webkit-transform: translateX(-9px);
+    transform: translateX(-9px);
+  }
+  40% {
+    -webkit-transform: translateX(6px);
+    transform: translateX(6px);
+  }
+  50% {
+    -webkit-transform: translateX(-6px);
+    transform: translateX(-6px);
+  }
+  65% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
 
 .book__submit:focus {
 

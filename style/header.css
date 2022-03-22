@@ -36,13 +36,14 @@
   font-size: 22px;
   line-height: 50px;
   text-transform: uppercase;
-
+  transition-property: color, transform;
+  transition-duration: .3s;
 }
 
 .navigation__items:hover {
   transform: scale(1.1);
   color: var(--main-color2);
-  transition-duration: .3s;
+
 }
 
 
@@ -59,13 +60,13 @@
   border:  3px solid var(--main-color2);
   border-radius: 10px;
   transition-property: transform, background-color;
-  transition-duration: 1.3s;
+  transition-duration: .3s;
 
 }
 
 
 .button:hover, .button:focus {
-  transform: scale(.1) rotate(360deg);
+  transform: scale(.5) rotate(360deg);
   background-color: var(--main-color);
   border: 3px solid #6C0287;
   border-radius: 10px;
