@@ -48,10 +48,7 @@
 
 .rest__item_2 {
   background-image: url("../img/audio.png");
-  /* align-self: self-end;
-   */
-
-
+  /* align-self: self-end;*/
 }
 
 .rest__item_3 {
@@ -65,8 +62,6 @@
 .rest__item_5 {
   background-image: url("../img/netflix.png");
   /*align-self: self-end;*/
-
-
 }
 
 .rest__item_6 {
@@ -91,17 +86,18 @@ figcaption {
 
 .rest__item:hover {
   transform: scale(1.1);
-}
-
-
-.rest__item_2:hover {
-  transform: translateY(70px) scale(1.1);
   z-index: 1;
 }
 
-.rest__item_5:hover {
-  transform: translateY(70px) scale(1.1);
 
+.rest__item_2 {
+  transform: translateY(70px) ;
+  z-index: 1;
+}
+
+.rest__item_5 {
+  transform: translateY(70px) ;
+  z-index: 1;
 }
 
 
