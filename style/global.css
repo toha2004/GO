@@ -52,10 +52,17 @@ li {
 }
 
 
-h1, h2, p, figure, fieldset, blockquote {
+h1, h2, p, figure,  blockquote, label {
   margin: 0;
+  padding: 0;
  }
 
+
+fieldset {
+  border: 1px solid #440F51;
+  margin: 0;
+  padding: 0;
+}
 
 iframe {
   border: none;

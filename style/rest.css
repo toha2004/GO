@@ -4,14 +4,11 @@
 
 .container-rest {
   max-width: 1180px;
-  height: 708px;
   margin: 0 auto;
 }
 
 
 .rest__title {
-  width: 980px;
-  height: 103px;
   text-align: center;
   font-weight: 700;
   font-size: 40px;
@@ -22,7 +19,7 @@
 
 
 .rest__list {
-  height: 565px;
+ /*height: 565px;*/
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -41,6 +38,8 @@
   line-height: 28px;
   transition-property: transform;
   transition-duration: .3s;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .rest__item_1 {
@@ -50,6 +49,8 @@
 .rest__item_2 {
   background-image: url("../img/audio.png");
   /* align-self: self-end;*/
+  transform: translateY(70px) ;
+  z-index: 1;
 }
 
 .rest__item_3 {
@@ -63,36 +64,23 @@
 .rest__item_5 {
   background-image: url("../img/netflix.png");
   /*align-self: self-end;*/
+  transform: translateY(70px) ;
+  z-index: 1;
 }
 
 .rest__item_6 {
   background-image: url("../img/sony.png");
 }
 
-figcaption {
-  position: absolute;
-  top: 166px;
-  right: 40px;
-  width: 300px;
-}
-
-
 .figcaption {
   position: absolute;
   top: 166px;
   right: 40px;
   width: 300px;
-}
-
-.rest__item_2 {
-  transform: translateY(70px) ;
-  z-index: 1;
-}
-
-
-.rest__item_5 {
-  transform: translateY(70px) ;
-  z-index: 1;
+  height: 56px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
 }
 
 
@@ -112,3 +100,102 @@ figcaption {
   transform: translateY(70px) scale(1.1);
   z-index: 1;
 }
+
+
+@media (max-width: 1024px) {
+  .rest {
+    padding: 0 0 70px 0;
+  }
+
+  .container-rest {
+    max-width: 904px;
+    margin: 0 60px;
+  }
+
+  .rest__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .rest__item {
+    width: 287px;
+    height: 172px;
+  }
+
+  .figcaption {
+    position: absolute;
+    top: 114px;
+    right: 20px;
+    width: 247px;
+  }
+  .figcaption5 {
+    top: 83px;
+  }
+}
+
+  @media (max-width: 768px) {
+    .rest {
+    padding: 0 0 60px 0;
+    }
+    .container-rest {
+      max-width: 688px;
+      margin: 0 auto;
+    }
+
+    .rest__title {
+      font-size: 24px;
+      line-height: 36px;
+      text-align: center;
+    }
+    .rest__item {
+      width: 334px;
+      height: 200px;
+    }
+
+    .rest__item_2 {
+      background-image: url("../img/audio.png");
+      transform: none ;
+    }
+
+    .rest__item_5 {
+      background-image: url("../img/audio.png");
+      transform: none ;
+    }
+
+    .figcaption {
+      position: absolute;
+      top: 132px;
+      right: 30px;
+      width: 274px;
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+
+    @media (max-width: 320px) {
+      .rest {
+      padding: 0 0 30px 0;
+      }
+      .container-rest {
+        max-width: 280px;
+        margin: 0 auto;
+      }
+      .rest__title {
+        width: 280px;
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 15px;
+      }
+      .rest__item {
+        width: 135px;
+        height: 75px;
+      }
+      .figcaption {
+        position: absolute;
+        top: 30px;
+        right: 10px;
+        width: 115px;
+        font-size: 10px;
+        line-height: 14px;
+      }
+    }

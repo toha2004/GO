@@ -5,8 +5,8 @@
 
 .container-banner {
   position: relative;
-  width: 1180px;
-  height: 823px;
+  max-width: 1180px;
+ height: 823px;
   margin: 0 auto;
 }
 
@@ -25,7 +25,7 @@
   font-weight: 400;
   font-size: 28px;
   padding-left: 100px;
- margin-bottom: 30px;
+  margin-bottom: 30px;
   line-height: 50px;
 }
 
@@ -44,8 +44,11 @@
 
 
 .banner__list {
-  width: 359px;
-  display: flex;
+  width: 399px;
+  height: 209px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px;
   align-items: end;
   text-align: center;
   font-weight: 400;
@@ -53,22 +56,6 @@
   line-height: 34px;
   color: #FFFFFF;
   margin-bottom: 150px;
-
-}
-
-
-.banner__item_1 {
-  width: 193px;
-  height: 209px;
-  margin-right: 43px;
-  text-align: center;
-}
-
-
-.banner__item_2 {
-  width: 166px;
-  height: 174px;
-  align-items: end;
 }
 
 
@@ -82,12 +69,12 @@
 
 
 .span2 {
-font-style: normal;
-font-weight: 900;
-font-size: 75px;
-line-height: 106px;
-font-variant: small-caps;
-color: var(--main-color2);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 75px;
+  line-height: 106px;
+  font-variant: small-caps;
+  color: var(--main-color2);
 }
 
 
@@ -129,9 +116,11 @@ color: var(--main-color2);
   width: 97px;
   height: 97px;
   background-image: url("../img/down.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   top: 636px;
   left: 539px;
-  transition-property: transform,  background-image;
+  transition-property: transform, background-image;
   transition-duration: .3s;
 }
 
@@ -151,4 +140,188 @@ color: var(--main-color2);
   transform: scale(0.9);
   background-image: url("../img/down-active.png");
   box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+  .banner {
+    padding: 0 0 83px 0;
+  }
+
+  .container-banner {
+    max-width: 904px;
+    height: 583px;
+  }
+
+  .banner__name {
+    font-size: 120px;
+    line-height: 100%;
+    margin-bottom: 20px;
+  }
+
+  .banner__name:after {
+    width: 453px;
+    height: 520px;
+    left: 451px;
+    top: 63px;
+  }
+
+  .banner__slogan {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .banner__list {
+    width: 348px;
+    height: 173px;
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: 80px;
+    gap: 44px;
+  }
+
+  .span1 {
+    font-size: 80px;
+    line-height: 113px;
+  }
+
+  .span2 {
+    font-size: 60px;
+    line-height: 85px;
+  }
+
+  .booking {
+    width: 296px;
+    height: 64px;
+    font-size: 22px;
+    line-height: 30px;
+    margin-left: 39px;
+  }
+
+  .down {
+    width: 67px;
+    height: 67px;
+    left: 418px;
+    top: 470px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .banner {
+    padding: 0 0 80px 0;
+  }
+
+  .container-banner {
+    max-width: 688px;
+    height: 537px;
+  }
+
+  .banner__name {
+    font-size: 86px;
+    line-height: 100%;
+    margin-bottom: 20px;
+  }
+
+  .banner__name:after {
+    width: 409px;
+    height: 479px;
+    left: 276px;
+    top: 58px;
+  }
+
+  .banner__slogan {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .banner__list {
+    width: 222px;
+    height: 107px;
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 100px;
+  }
+
+  .span1 {
+    font-size: 50px;
+    line-height: 71px;
+  }
+
+  .span2 {
+    font-size: 40px;
+    line-height: 56px;
+  }
+
+  .booking {
+    width: 214px;
+    height: 46px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .down {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .banner {
+    padding: 0 0 46px 0;
+  }
+
+  .container-banner {
+    max-width: 280px;
+    height: 204px;
+    margin: 0 auto;
+  }
+
+  .banner__name {
+    font-size: 35px;
+    line-height: 100%;
+    margin-bottom: 6px;
+  }
+
+  .banner__name:after {
+    width: 161px;
+    height: 179px;
+    left: 118px;
+    top: 25px
+  }
+
+  .banner__slogan {
+    font-size: 10px;
+    line-height: 14px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+  }
+
+  .banner__list {
+    width: 139px;
+    height: 57px;
+    font-size: 10px;
+    line-height: 11px;
+    margin-bottom: 30px;
+    gap: 20px;
+  }
+
+  .span1 {
+    font-size: 26px;
+    line-height: 37px;
+  }
+
+  .span2 {
+    font-size: 22px;
+    line-height: 31px;
+  }
+
+  .booking {
+    width: 117px;
+    height: 27px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .down {
+    display: none;
+  }
 }

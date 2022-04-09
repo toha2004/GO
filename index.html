@@ -16,6 +16,7 @@
 <header>
   <section class="header">
     <div class="container-header">
+      <img class="menu" src="img2/menu.svg" alt="меню">
       <img class="logo" src="img/logo-go.png" alt="image logo" title="logo">
       <nav class="navigation">
         <ul class="navigation__list">
@@ -68,7 +69,7 @@
           <p class="figcaption">Настольные игры</p>
         </li>
         <li class="rest__item rest__item_5">
-          <p class="figcaption">Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</p>
+          <p class="figcaption figcaption5">Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</p>
         </li>
         <li class="rest__item rest__item_6">
           <p class="figcaption">PlayStation 5</p>
@@ -93,117 +94,109 @@
 
   <section class="book">
     <div class="container-book">
+      <h2 id="book" class="book__title">Забронировать зал просто</h2>
       <form action="https://jsonplaceholder.typicode.com/posts" method="post">
-        <!--<fieldset>-->
-        <h2 id="book" class="book__title">Забронировать зал просто</h2>
-        <div class="big-box1">
+        <fieldset class="fieldset-1">
           <h3 class="book__subtitle">Выбери зал</h3>
-          <div class="big-box1__list">
-            <label class="big-box1__button"><input type="radio" class="big-box1__radio" name="80's vibes"
-                                                   value="80's vibes">80’s vibes</label>
-            <label class="big-box1__button"><input type="radio" class="big-box1__radio" name="wars" value="star wars">Star
+          <div class="container-book1">
+            <label class="container-book1__button"><input type="radio" class="container-book1__radio" name="80's vibes"
+                                                          value="80's vibes">80’s vibes</label>
+            <label class="container-book1__button"><input type="radio" class="container-book1__radio" name="wars"
+                                                          value="star wars">Star
               wars</label>
-            <label class="big-box1__button"><input type="radio" class="big-box1__radio" name="west" value="wild west">wild
+            <label class="container-book1__button"><input type="radio" class="container-book1__radio" name="west"
+                                                          value="wild west">wild
               west</label>
-            <label class="big-box1__button"><input type="radio" class="big-box1__radio " name="style"
-                                                   value="neon style">neon style</label>
+            <label class="container-book1__button"><input type="radio" class="container-book1__radio " name="style"
+                                                          value="neon style">neon style</label>
           </div>
-        </div>
+        </fieldset>
 
-        <div class="big-box2">
+        <fieldset class="fieldset-2">
           <h3 class="book__subtitle">Собери набор развлечений</h3>
-
-          <div class="big-box2__list">
+          <div class="container-book2">
             <div class="small-box2 small-box2_left">
-              <p class="big-box2__item">Приставка</p>
-              <label class="big-box2__label">
-                <input type="radio" class="big-box2__input" name="play" value="playstation">PlayStation
+              <p class=" book__subtitle2">Приставка</p>
+              <label class="container-book2__label">
+                <input type="radio" class="container-book2__input" name="play" value="playstation">PlayStation
               </label>
-              <label class="big-box2__label">
-                <input type="radio" class="big-box2__input" name="sega" value="sega mega drive">Sega Mega Drive
+              <label class="container-book2__label">
+                <input type="radio" class="container-book2__input" name="sega" value="sega mega drive">Sega Mega Drive
               </label>
-              <label class="big-box2__label">
-                <input type="radio" class="big-box2__input" name="x-box" value="x-box one s">X-box One S
+              <label class="container-book2__label">
+                <input type="radio" class="container-book2__input" name="x-box" value="x-box one s">X-box One S
               </label>
-              <label class="big-box2__label">
-                <input type="radio" class="big-box2__input" name="dendy" value="dendy">Dendy
+              <label class="container-book2__label">
+                <input type="radio" class="container-book2__input" name="dendy" value="dendy">Dendy
               </label>
             </div>
 
-            <div class="small-box2">
-              <p class="big-box2__item">Настольные игры</p>
-              <label class="big-box2__label">
-                <input type="checkbox" class="big-box2__input_2" name="jenga" value="Jenga">Jenga
+            <div class="small-box2 small-box2_center">
+              <p class=" book__subtitle2">Настольные игры</p>
+              <label class="container-book2__label">
+                <input type="checkbox" class="container-book2__input_2" name="jenga" value="Jenga">Jenga
               </label>
-              <label class="big-box2__label">
-                <input type="checkbox" class="big-box2__input_2" name="monopoly" value="Monopoly">Monopoly
+              <label class="container-book2__label">
+                <input type="checkbox" class="container-book2__input_2" name="monopoly" value="Monopoly">Monopoly
               </label>
-              <label class="big-box2__label">
-                <input type="checkbox" class="big-box2__input_2" name="play" value="Munchkin">Манчкин
+              <label class="container-book2__label">
+                <input type="checkbox" class="container-book2__input_2" name="play" value="Munchkin">Манчкин
               </label>
-              <label class="big-box2__label">
-                <input type="checkbox" class="big-box2__input_2" name="alias" value="Alias">Alias
+              <label class="container-book2__label">
+                <input type="checkbox" class="container-book2__input_2" name="alias" value="Alias">Alias
               </label>
-              </ul>
             </div>
 
             <div class="small-box2 small-box2_right">
-              <p class="big-box2__item">Дополнительно</p>
-
-              <label class="big-box2__label">
-                <input type="checkbox" class="big-box2__input_2" name="sing" value="karaoke">Караоке
+              <p class=" book__subtitle2">Дополнительно</p>
+              <label class="container-book2__label">
+                <input type="checkbox" class="container-book2__input_2" name="sing" value="karaoke">Караоке
               </label>
-
-
-              <label class="big-box2__label">
-                <input type="checkbox" class="big-box2__input_2" name="vr" value="vr">VR
+              <label class="container-book2__label">
+                <input type="checkbox" class="container-book2__input_2" name="vr" value="vr">VR
               </label>
-
             </div>
           </div>
-        </div>
+        </fieldset>
 
 
-        <div class="big-box3">
+        <fieldset class="fieldset-3">
           <h3 class="book__subtitle">Выбери дату и время</h3>
-
-          <div class="big-box3__list">
-
-            <div class="small-box3">
+          <div class="container-book3">
+            <div class="small-box3 small-box3-left">
               <div class="small-box__subtopic">
-                <input type="date" class="big-box3__input_date" name="date"
+                <input type="date" class="container-book3__input_date" name="date"
                        required>
-                <input type="time" class="big-box3__input_date" name="time" required>
+                <input type="time" class="container-book3__input_date" name="time" required>
               </div>
-              <input type="number" class="big-box3__input" name="count" min="1" required
+              <input type="number" class="container-book3__input container-book3__input_left" name="count" min="1"
+                     required
                      placeholder="Сколько человек">
             </div>
 
-            <div class="small-box3">
+            <div class="small-box3 small-box3-center">
               <label class="small-box3__label">Имя<br>
-                <input type="text" class="big-box3__input big-box3__input_center" name="first name" required>
+                <input type="text" class="container-book3__input container-book3__input_center" name="first name"
+                       required>
               </label>
               <label class="small-box3__label">Фамилия<br>
-                <input type="text" class="big-box3__input big-box3__input_center" name="surname" required>
+                <input type="text" class="container-book3__input container-book3__input_center" name="surname" required>
               </label>
             </div>
 
-
-            <div class="small-box3">
+            <div class="small-box3 small-box3-right">
               <label class="small-box3__label">Телефон<br>
-                <input type="tel" class="big-box3__input" name="phone" required title="+7-___-___-__-__"
+                <input type="tel" class="container-book3__input" name="phone" required title="+7-___-___-__-__"
                        placeholder="+7-___-___-__-__"
                        pattern="^\+?[7-8]-?[0-9]{3}-?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$">
               </label>
               <label class="small-box3__label">E-mail<br>
-                <input type="email" class="big-box3__input" name="mail" required>
+                <input type="email" class="container-book3__input" name="mail" required>
               </label>
             </div>
           </div>
-        </div>
-
+        </fieldset>
         <button type="submit" class="book__submit">Забронировать</button>
-        <!--</fieldset>-->
       </form>
     </div>
   </section>
@@ -212,20 +205,31 @@
   <section class="about">
     <div class="container-about">
       <h2 id="we" class="about__title">О нас</h2>
-      <div class="container-left">
-        <img class="about_img" src="img/photos.jpg" alt="Game over">
-      </div>
-      <div class="container-right">
-        <p class="about__text about__text_margin1">Для наших гостей мы создали
+      <div class="about-box1">
+        <p class="about__text about__text1">Для наших гостей мы создали
           <i>концептуально новое
             игровое пространство виртуальной реальности</i>
           в центральной части города.
         </p>
-        <p class="about__text about__text_margin2">Каждый день мы стараемся создавать
+        <p class="about__text about__text2">Каждый день мы стараемся создавать
           для вас самую лучшую игровую атмосферу
           и радовать Вас топовыми игровыми разработками
           со всего мира.
         </p>
+      </div>
+      <img class="about_img" src="img/photos.jpg" alt="Game over">
+      <div class="about-box">
+        <p class="about__text about__text1">Для наших гостей мы создали
+          <i>концептуально новое
+            игровое пространство виртуальной реальности</i>
+          в центральной части города.
+        </p>
+        <p class="about__text about__text2">Каждый день мы стараемся создавать
+          для вас самую лучшую игровую атмосферу
+          и радовать Вас топовыми игровыми разработками
+          со всего мира.
+        </p>
+    </div>
         <blockquote class="about__quote">
           <b>GAME OVER</b>-
           это место
@@ -233,13 +237,11 @@
           впечатлений
         </blockquote>
         <div class="boss">
-          <div class="boss__cite">
-            <p class="boss__text">Аркадий Абакшин,
-              создатель игровой
-              территории GAME OVER</p>
-          </div>
+          <div class="boss__img"></div>
+          <p class="boss__cite">Аркадий Абакшин,
+            создатель игровой
+            территории GAME OVER</p>
         </div>
-      </div>
     </div>
   </section>
 
@@ -247,39 +249,43 @@
   <section class="reviews">
     <div class="container-reviews">
       <h2 id="reviews" class="reviews__title">Отзывы посетителей</h2>
+
       <ul class="reviews__list">
         <li class="reviews__item">
-          <div class="box">
-            <div class="container-img container-img1">
+          <button class="reviews__button button-left" type="button"><img src="img2/left.svg" alt="#"></button>
+          <!--<div class="reviews__box">-->
+            <div class="reviews-person">
+              <div class="reviews-img reviews-img1"></div>
+              <p class="reviews__name">Макс Самойлов</p>
             </div>
             <p class="reviews__text">Отмечали здесь день рождения с компанией друзей, все было очень круто! VR очки это
               просто бомба,
               никогда еще я не был в таком полном игровом погружении. Сервис на высоте!</p>
-          </div>
-          <p class="reviews__text_clear">Макс Самойлов</p>
+        <!--  </div>-->
+          <button class="reviews__button button-left" type="button"><img src="img2/right.svg" alt="#"></button>
         </li>
-        <li class="reviews__item">
-          <div class="box">
-            <div class="container-img container-img2">
-            </div>
+
+        <!--<li class="reviews__item">
+          <div class="reviews__box">
+            <div class="reviews-img reviewsr-img2"></div>
             <p class="reviews__text">Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился
               корпоратив!
               У нас в городе
               больше нет подобных заведений</p>
           </div>
-          <p class="reviews__text_clear">Оксана Григорьева</p>
+          <p class="reviews__name">Оксана Григорьева</p>
         </li>
         <li class="reviews__item reviews__item_end">
-          <div class="box">
-            <div class="container-img container-img3">
-            </div>
+          <div class="reviews__box">
+            <div class="reviews-img reviews-img3"></div>
             <p class="reviews__text">Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в
               стиле звездных войн,
               попал в атмосферу космоса</p>
           </div>
-          <p class="reviews__text_clear ">Никита Ященко</p>
-        </li>
+          <p class="reviews__name ">Никита Ященко</p>
+        </li>-->
       </ul>
+
     </div>
   </section>
 
@@ -303,10 +309,13 @@
   <section class="footer">
     <div class="container-footer">
       <h2 id="contacts" class="footer__title">Контакты</h2>
-      <div class="big-box">
-        <div class="big-box__box">
+      <div class="container-footer1">
+        <div class="big-box">
           <ul class="contacts__list">
-            <li class="contacts__item contacts__item_location">г.Москва ул.Аквамарина, 16</li>
+            <li class="contacts__item contacts__item_location">г.Москва
+              ул. Усачёва, 29 к3</li>
+            <li class="contacts__item contacts__item_location2">г.Москва<br>
+              ул. Усачёва, 29 к3</li>
             <li class="contacts__item contacts__item_phone"><a href="tel:89999999999">8(950)930-28-93</a></li>
             <li class="contacts__item contacts__item_mail "><a href="mailto:GameOver@gmail.com">GameOver@gmail.com</a>
             </li>
@@ -320,9 +329,11 @@
         </div>
         <img class="map" src="img/map.png" alt="карта">
       </div>
-      <p class="footer__text left">© Game Over, 2022</p>
-      <a class="footer__text right" href="#" target="_blank">Design by Anastasia Ilina<br>
-        ilina9825@gmail.com</a>
+      <div class="container-footer2">
+        <p class="footer__text">© Game Over, 2022</p>
+        <a class="footer__text right" href="#" target="_blank">Design by Anastasia Ilina<br>
+          ilina9825@gmail.com</a>
+      </div>
     </div>
 
   </section>

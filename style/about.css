@@ -2,28 +2,22 @@
   padding: 50px 0;
 }
 
-
 .container-about {
   width: 1180px;
   height: 692px;
   margin: 0 auto;
 }
 
-
-.container-left {
+.about_img {
   width: 600px;
   height: 596px;
+  margin-right: 80px;
   float: left;
 }
 
-
-.container-right {
-  width: 500px;
-  height: 596px;
-  display: inline-block;
-  float: right;
+.about-box1 {
+  display: none;
 }
-
 
 .about__title {
   text-align: center;
@@ -34,35 +28,29 @@
   text-transform: uppercase;
 }
 
-
-.about__text {
-  font-weight: 400;
+.about__box {
+  width: 500px;
+  font-style: normal;
+  font-weight: normal;
   font-size: 20px;
   line-height: 28px;
-  white-space: pre-line;
-}
-
-
-.about__text_margin1 {
-  margin-bottom: 10px;
-}
-
-
-.about__text_margin2 {
+  float: right;
   margin-bottom: 25px;
 }
 
+.about__text1 {
+  margin-bottom: 10px;
+}
 
 .about__quote {
   width: 500px;
-  height: 216px;
   margin-bottom: 30px;
   font-weight: 400;
   font-size: 44px;
   line-height: 50px;
   text-transform: uppercase;
+  float: right;
 }
-
 
 .about__quote:before {
   content: "";
@@ -75,7 +63,6 @@
   background-repeat: no-repeat;
 }
 
-
 .about__quote:after {
   content: "";
   display: inline-block;
@@ -85,18 +72,23 @@
   background-size: contain;
   background-repeat: no-repeat;
   transform: rotate(180deg);
-
 }
 
-
 .boss {
-  padding-left: 221px;
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 110px;
+  float: right;
+}
+
+.boss__img {
+  width: 80px;
+  height: 80px;
   background-image: url("../img2/boss.png");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: left 111px bottom 0;
 }
-
 
 .boss__cite {
   width: 280px;
@@ -104,16 +96,179 @@
 }
 
 
-.box__text {
-  font-family: Arial;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 28px;
+@media (max-width: 1024px) {
+  .about {
+    padding: 70px 0;
+  }
+
+  .container-about {
+    width: 904px;
+    height: 504px;
+    margin: 0 auto;
+  }
+
+  .about__title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 15px;
+  }
+  .about_img {
+    width: 420px;
+    height: 417px;
+    margin-right: 39px;
+  }
+
+  .about__box {
+    width: 444px;
+    font-size: 18px;
+    line-height: 24px;
+    float: right;
+  }
+
+  .about__quote {
+    width: 420px;
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 13px;
+  }
+
+  .boss__text {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .boss {
+    width: 444px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 114px;
+  }
+  .boss__img {
+    width: 70px;
+    height: 70px;
+  }
+  .boss__cite {
+    width: 225px;
+    font-size: 18px;
+    line-height: 26px;
+  }
 }
 
 
+  @media (max-width: 768px) {
+    .about {
+      padding: 70px 0;
+    }
+
+    .container-about {
+      width: 688px;
+      height: 660px;
+      margin: 0 auto;
+    }
+
+    .about__title {
+      font-size: 24px;
+      line-height: 36px;
+    }
+
+    .about_img {
+      width: 382px;
+      height: 380px;
+      margin-right: 28px;
+      float: left;
+    }
+
+    .about__box {
+      width: 278px;
+      font-size: 16px;
+      line-height: 22px;
+      margin-top: 66px;
+      float: right;
+    }
+
+    .about__quote {
+      width: 666px;
+      font-size: 32px;
+      line-height: 36px;
+      margin-bottom: 16px;
+    }
+
+    .boss {
+      width: 320px;
+      padding-left: 0;
+    }
+
+    .boss__text {
+      font-size: 18px;
+      line-height: 26px;
+    }
+
+  }
 
 
+    @media (max-width: 320px) {
+      .about {
+        padding: 30px 0;
+      }
+
+      .container-about {
+        width: 280px;
+        height: 620px;
+        margin: 0 auto;
+      }
+
+      .about_img {
+        width: 280px;
+        height: 280px;
+        margin: 0 auto;
+      }
+
+      .about-box {
+        display: none;
+      }
+
+      .about-box1 {
+        width: 280px;
+        display: inherit;
+        float: left;
+        margin-bottom: 15px;
+        margin-top: 0;
+      }
+
+      .about__title {
+        font-size: 14px;
+        line-height: 18px;
+      }
+
+      .about__text {
+        font-size: 12px;
+        line-height: 16px;
+      }
+
+      .about__quote {
+        width: 280px;
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 9px;
+      }
+
+      .about_img {
+        width: 280px;
+        height: 280px;
+      }
+      .boss {
+        width: 280px;
+
+      }
+      .boss__img {
+        width: 56px;
+        height: 56px;
+      }
+      .boss__cite {
+        width: 213px;
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
 
 

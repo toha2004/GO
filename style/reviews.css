@@ -4,11 +4,10 @@
 
 
 .container-reviews {
-  width: 980px;
-  height: 1153px;
+  width: 1180px;
+  height: 415px;
   margin: 0 auto;
 }
-
 
 .reviews__title {
   text-align: center;
@@ -19,64 +18,222 @@
   text-transform: uppercase;
 }
 
-
-.reviews__list {
-  width: 980px;
-  height: 1057px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-
-.box {
+.reviews__item {
+  width: 1180px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 11px;
+}
+
+.reviews-person {
+  width: 280px;
+  height: 319px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.reviews__button {
+  background-color: #1B1A1B;
+  border: none;
+}
+
+.reviews__text {
+  width: 680px;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.reviews__name {
+  font-size: 20px;
+  line-height: 28px;
 }
 
 
-.container-img {
+.reviews-img {
   width: 280px;
   height: 280px;
-
+  border-radius: 140px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 
-.container-img1 {
+.reviews-img1 {
   background-image: radial-gradient(50% 50% at 50% 50%, rgba(196, 196, 196, 0) 0%, rgba(108, 2, 135, 0.5) 100%),
-   url("../img/1.png");
-  border-radius: 140px;
+  url("../img/1.png");
 }
 
 
 .container-img2 {
   background-image: radial-gradient(50% 50% at 50% 50%, rgba(196, 196, 196, 0) 0%, rgba(108, 2, 135, 0.5) 100%),
   url("../img/2.png");
-  border-radius: 140px;
 }
 
 
 .container-img3 {
   background-image: radial-gradient(50% 50% at 50% 50%, rgba(196, 196, 196, 0) 0%, rgba(108, 2, 135, 0.5) 100%),
   url("../img/3.png");
-  border-radius: 140px;
 }
 
 
 .reviews__text {
   width: 680px;
-  height: 88px;
-}
-
-
-.reviews__text_clear {
-  width: 280px;
-  height: 28px;
-  clear: left;
-  text-align: center;
 }
 
 
 
+@media (max-width: 1024px) {
+  .reviews {
+    padding: 50px 0;
+  }
+
+  .container-reviews {
+    width: 904px;
+    height: 285px;
+  }
+
+  .reviews__item {
+    width: 904px;
+  }
+
+  .reviews__title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 26px;
+  }
+
+
+  .reviews-person {
+    width: 172px;
+    height: 219px;
+    display: flex;
+    align-content: space-between;
+  }
+
+  .reviews-img {
+    width: 172px;
+    height: 172px;
+    border-radius: 86px;
+
+  }
+
+  .reviews__text {
+    width: 515px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .reviews__name {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .reviews-img1 {
+    background-image: url("../img/1.png");
+  }
+}
+
+
+@media (max-width: 768px) {
+  .reviews {
+    padding: 50px 0;
+  }
+
+  .container-reviews {
+    width: 688px;
+    height: 228px;
+  }
+
+  .reviews__title {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 31px;
+  }
+
+  .reviews__item {
+    width: 688px;
+    height: 197px;
+  }
+
+  .reviews-person {
+    width: 156px;
+    height: 190px;
+    display: flex;
+    align-content: space-between;
+  }
+
+  .reviews__text {
+    width: 393px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .reviews__name {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .reviews-img {
+    width: 153px;
+    height: 153px;
+    border-radius: 76px;
+  }
+}
+
+
+@media (max-width: 320px) {
+  .reviews {
+    padding: 30px 0;
+  }
+
+  .container-reviews {
+    width: 280px;
+    height: 228px;
+  }
+
+  .reviews__title {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 15px;
+  }
+
+  .reviews__item {
+    width: 280px;
+    height: 177px;
+    flex-wrap: wrap;
+  }
+
+  .reviews-person {
+    width: 156px;
+    height: 115px;
+    display: flex;
+    align-content: space-between;
+    margin: 0 auto;
+  }
+
+  .reviews__text {
+    width: 280px;
+    font-size: 12px;
+    line-height: 16px;
+    order: 1;
+  }
+
+  .reviews__name {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .reviews-img {
+    width: 86px;
+    height: 86px;
+    margin: 0 auto;
+    border-radius: 43px;
+  }
+
+  .reviews__text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
