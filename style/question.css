@@ -132,14 +132,17 @@
     right: 12px;
     top: 12px;
     background-image: url("../img/open-purple.svg");
+    background-size: cover;
   }
 
   .question__item:hover:after, .question__item:hover:nth-child(2n):after {
     background: url("../img/open-hover1.svg") no-repeat;
+    background-size: cover;
   }
 
   .question__item:active:after, .question__item:active:nth-child(2n):after {
     background: url("../img/close1.svg") no-repeat;
+    background-size: cover;
   }
 }
 
