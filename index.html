@@ -9,6 +9,7 @@
   <title>GO</title>
   <link rel="stylesheet" href="style/normalize.css">
   <link rel="stylesheet" href="style/index.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 
 
@@ -249,10 +250,9 @@
   <section class="reviews">
     <div class="container-reviews">
       <h2 id="reviews" class="reviews__title">Отзывы посетителей</h2>
-      <div class="reviews-content">
-        <button class="reviews__button button-left" type="button"><img class="slider-img" src="img2/left.svg" alt="#"></button>
-        <ul class="reviews__slider">
-          <li class="reviews__item anim1">
+      <div class="swiper mySwiper">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide">
             <div class="reviews-person">
               <div class="reviews-img reviews-img1"></div>
               <p class="reviews__name">Макс Самойлов</p>
@@ -261,7 +261,7 @@
               просто бомба,
               никогда еще я не был в таком полном игровом погружении. Сервис на высоте!</p>
           </li>
-          <li class="reviews__item anim2">
+          <li class="swiper-slide">
             <div class="reviews-person">
               <div class="reviews-img reviews-img2"></div>
               <p class="reviews__name">Оксана Григорьева</p>
@@ -271,7 +271,7 @@
               У нас в городе
               больше нет подобных заведений</p>
           </li>
-          <li class="reviews__item anim3">
+          <li class="swiper-slide">
             <div class="reviews-person">
               <div class="reviews-img reviews-img3"></div>
               <p class="reviews__name ">Никита Ященко</p>
@@ -281,7 +281,8 @@
               попал в атмосферу космоса</p>
           </li>
         </ul>
-        <button class="reviews__button button-left" type="button"><img  class="slider-img" src="img2/right.svg" alt="#"></button>
+        <button class="swiper-button swiper-button-next" type="button"></button>
+        <button class="swiper-button swiper-button-prev" type="button"></button>
       </div>
     </div>
   </section>
@@ -341,6 +342,18 @@
       event.target.focus()
     }
   })
+</script>
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
 </script>
 </body>
 </html>

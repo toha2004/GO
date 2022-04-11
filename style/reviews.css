@@ -18,162 +18,46 @@
   text-transform: uppercase;
 }
 
-.reviews-content {
-  height: 280px;
+.swiper {
+  height: 100%;
   width: 1180px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.reviews__slider {
+.swiper-wrapper {
   width: 980px;
+  height: 280px;
   margin: 0 auto;
   padding: 0;
   position: relative;
 }
 
 
-.reviews__item {
+.swiper-slide {
   width: 980px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   position: absolute;
-  left: -325px;
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
 }
 
-.anim1 {
-  animation: cycle 30s linear infinite;
-}
-
-.anim2 {
-  animation: cycle2 30s linear infinite;
-}
-
-.anim3 {
-  animation: cycle3 30s linear infinite;
-}
-
-@keyframes cycle {
-  0% {
-   left: 0px;
-  }
-  4% {
-    left: 0px;
-  }
-  16% {
-    left: 0px;
-    opacity: 1;
-    z-index: 0;
-  }
-  20% {
-    left: 325px;
-    opacity: 0;
-    z-index: 0;
-  }
-  21% {
-    left: -325px;
-    opacity: 0;
-    z-index: -1;
-  }
-  50% {
-   left: -325px;
-    opacity: 0;
-    z-index: -1;
-  }
-  92% {
-    left: -325px;
-    opacity: 0;
-    z-index: 0;
-  }
-  96% {
-    left: -325px;
-    opacity: 0;
-  }
-  100% {
-    left: 0px;
-    opacity: 1;
-  }
-}
-
-@keyframes cycle2 {
-  0% {
-    left: -325px;
-    opacity: 0;
-  }
-  16% {
-    left: -325px;
-    opacity: 0;
-  }
-  20% {
-    left: 0px;
-    opacity: 1;
-  }
-  24% {
-    left: 0px;
-    opacity: 1;
-  }
-  36% {
-    left: 0px;
-    opacity: 1;
-    z-index: 0;
-  }
-  40% {
-    left: 325px;
-    opacity: 0;
-    z-index: 0;
-  }
-  41% {
-    left: -325px;
-    opacity: 0;
-    z-index: -1;
-  }
-  100% {
-    left: -325px;
-    opacity: 0;
-    z-index: -1;
-  }
-}
-
-@keyframes cycle3 {
-  0% {
-    left: -325px;
-    opacity: 0;
-  }
-  36% {
-   left: -325px;
-    opacity: 0;
-  }
-  40% {
-    left: 0px;
-    opacity: 1;
-  }
-  44% {
-    left: 0px;
-    opacity: 1;
-  }
-  56% {
-    left: 0px;
-    opacity: 1;
-    z-index: 0;
-  }
-  60% {
-    left: 325px;
-    opacity: 0;
-    z-index: 0;
-  }
-  61% {
-    left: -325px;
-    opacity: 0;
-    z-index: -1;
-  }
-  100% {
-    left: -325px;
-    opacity: 0;
-    z-index: -1;
-  }
+.swiper-button {
+ background-color: #1C1A1A;
+  border: none;
+  display: none;
 }
 
 
@@ -184,17 +68,6 @@
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
-}
-
-.reviews__button {
-  width: 65px;
-  background-color: #1B1A1B;
-  border: none;
-}
-
-.slider-img {
-  width: 65px;
-  height: 65px;
 }
 
 
@@ -251,15 +124,18 @@
     width: 904px;
     height: 285px;
   }
-
-  .reviews__slider {
+  .swiper {
+    height: 100%;
+    width: 904px;
+  }
+  .swiper-wrapper {
     width: 725px;
     margin: 0 auto;
     padding: 0;
     position: relative;
   }
 
-  .reviews__item {
+  .swiper-slide {
     width: 725px;
   }
 
@@ -316,8 +192,20 @@
     line-height: 36px;
     margin-bottom: 31px;
   }
+  .swiper {
+    height: 100%;
+    width:  688px;
+  }
 
-  .reviews__item {
+  .swiper-wrapper {
+    width: 688px;
+    height: 197px;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+  }
+
+  .swiper-slide {
     width: 688px;
     height: 197px;
   }
@@ -364,12 +252,17 @@
     margin-bottom: 15px;
   }
 
-  .reviews-content {
+  .swiper  {
     height: 177px;
     width: 280px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .swiper-wrapper {
+    width: 280px;
+    height: 177px;
   }
 
   .reviews__slider {
@@ -379,7 +272,7 @@
     position: relative;
   }
 
-  .reviews__item {
+  .swiper-slide {
     width: 280px;
     height: 177px;
     flex-wrap: wrap;
@@ -397,6 +290,7 @@
     width: 280px;
     font-size: 12px;
     line-height: 16px;
+    text-align: center;
     order: 1;
   }
 
