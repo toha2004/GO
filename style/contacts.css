@@ -39,6 +39,7 @@
   position: relative;
   padding-left: 60px;
 }
+
 .contacts__item_location2 {
   display: none;
 }
@@ -86,7 +87,7 @@
 
 
 .social {
-  width: 280px;
+  width: 120px;
   display: flex;
   justify-content: space-between;
 }
@@ -95,69 +96,25 @@
 .social__item {
   width: 48px;
   height: 48px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: left;
-  color: var(--main-color5);
   transition-property: transform, background-image;
-  transition-duration: .3s;
+  transition: .3s ease-in;
 }
 
 
-.social__item_Ins {
-  background-image: url("../img2/Vector.svg");
+svg {
+  fill: #fff;
 }
 
 
-.social__item_Vk {
-  background-image: url("../img2/Vector2.svg");
-}
-
-
-.social__item_Fb {
-  background-image: url("../img2/Vector3.svg");
-}
-
-
-.social__item_Tg {
-  background-image: url("../img2/Vector4.svg");
-  margin-right: 0;
-}
-
-
-.social__item_Ins:hover {
-  background-image: url("../img/hover-social.png");
+svg:hover, svg:focus {
+  fill: #EADEED;
   transform: scale(1.1);
 }
 
 
-.social__item_Ins:focus {
-  background-image: url("../img/social-focus.png");
-  transform: scale(1.1);
-}
-
-
-.social__item_Ins:active {
-  background-image: url("../img/social-active.png");
+svg:active {
+  fill: #CD06FF;
   transform: scale(0.9);
-}
-
-
-.social__item_Vk:hover, .social__item_Vk:focus, .social__item_Vk:active {
-  background-image: url("../img2/Vector2.svg");
-  transform: scale(1.1);
-}
-
-
-.social__item_Tg:hover, .social__item_Tg:focus, .social__item_Tg:active {
-  background-image: url("../img2/Vector4.svg");
-  transform: scale(1.1);
-}
-
-
-.social__item_Fb:hover, .social__item_Fb:focus, .social__item_Fb:active {
-  background-image: url("../img2/Vector3.svg");
-  transform: scale(1.1);
 }
 
 
@@ -224,7 +181,8 @@
     height: 26px;
   }
 
-  .social__item {
+
+  svg {
     width: 38px;
     height: 38px;
   }
@@ -258,13 +216,18 @@
     text-align: center;
   }
 
+  .social {
+    margin: 0 auto;
+  }
+
   .contacts__item {
     position: relative;
     padding-left: 0;
+
   }
 
   .contacts__item_location {
-display: none;
+    display: none;
   }
 
   .contacts__item_location2 {
@@ -285,12 +248,6 @@ display: none;
     left: 19px;
   }
 
-  .social {
-    margin: 0 auto;
-  }
-
-  .social__item {
-  }
 
   .footer__title {
     font-size: 24px;
@@ -354,6 +311,11 @@ display: none;
   }
 
   .social__item {
+    width: 29px;
+    height: 29px;
+  }
+
+  svg {
     width: 29px;
     height: 29px;
   }

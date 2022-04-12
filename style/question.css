@@ -47,11 +47,11 @@
   width: 50px;
   height: 50px;
   background-image: url("../img/open-purple.svg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   right: 25px;
   top: 20px;
-  transition: background-image .3s ease-in;
+  transition: background-image .3s  ease-in-out;
   -webkit-transition: background-image .3s linear;
   -moz-transition: background-image .3s linear;
   -o-transition: background-image .3s linear;
@@ -65,7 +65,7 @@
   width: 50px;
   height: 50px;
   background-image: url("../img/open1.svg");
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   float: right;
@@ -80,25 +80,25 @@
 
 .question__item:hover:after {
   background: url("../img/open-hover1.svg") no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 
 .question__item:active:after {
   background: url("../img/close1.svg") no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 
 .question__item:hover:nth-child(2n):after {
   background: url("../img/open-hover2.svg") no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 
 .question__item:active:nth-child(2n):after {
   background: url("../img/close2.svg") no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 
@@ -152,19 +152,26 @@
       padding: 50px 0;
     }
 
+
     .container-question {
       width: 688px;
       margin: 0 auto;
     }
+
+
     .question__title {
       font-size: 24px;
       line-height: 26px;
     }
+
+
     .question__item, .question__item:nth-child(2n) {
       font-weight: 700;
       font-size: 18px;
       padding: 23px 54px;
     }
+
+
     .question__item:after, .question__item:nth-child(2n):after {
       width: 46px;
       height: 46px;
@@ -178,17 +185,24 @@
       padding: 50px 0;
     }
 
+
     .container-question {
       width: 280px;
       margin: 0 auto;
     }
+
+
     .question__item {
       height: 40px;
     }
+
+
     .question__title {
       font-size: 14px;
       line-height: 18px;
     }
+
+
     .question__item, .question__item:nth-child(2n) {
       width: 280px;
       height: 46px;
@@ -197,6 +211,8 @@
       padding: 7px 43px 15px 13px;
       margin-bottom: 10px;
     }
+
+
     .question__item:after, .question__item:nth-child(2n):after {
       width: 30px;
       height: 30px;
