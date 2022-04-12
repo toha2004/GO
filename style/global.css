@@ -52,7 +52,7 @@ li {
 }
 
 
-h1, h2, p, figure,  blockquote, label {
+h1, h2, h3, p, figure,  blockquote, label {
   margin: 0;
   padding: 0;
  }
